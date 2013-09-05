@@ -18,10 +18,25 @@ Make changes to the project and commit them to the repository
 3) open up names.txt in your clone of the repository 
 4) add [Your name] has completed this exercise
 5) save your changes and exit names.txt
-6) make a commit and update the repository by running
-	git commit -m '[add description of your update here]' 
-	and then
-	git push origin master 
-7) Finished. I will have to check and confirm your changes before it appears on the github website in the repository. 
+6) make a commit and update the repository by running:
+
+	git add names.txt
+
+	git commit -m '[add description of your update here]'
+
+	git push origin master
+
+You should see something like this that tells you everything has been updated: 
+
+harrison@air ~/Documents/Capstone/capstone $  > git push origin master 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.07 KiB, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/harrison-n/capstone.git
+   37fff94..bac55fa  master -> master
+
+7) Good job, I will have to check and confirm your changes before it appears on the github website in the repository. 
 
 

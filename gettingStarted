@@ -13,6 +13,7 @@ Steps to fork the github repository ( in other words, make a copy of it on your 
 3) make sure you do the Configure Remotes step 
 
 Make changes to the project and commit them to the repository
+
 1) So now you should have the most updated version of the project and have these files in the folder capstone - "README.md, gettingStarted, names.txt"
 2) We are going to add our name to the names.txt file and update the repository. 
 3) open up names.txt in your clone of the repository 
@@ -37,6 +38,20 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/harrison-n/capstone.git
    37fff94..bac55fa  master -> master
 
-7) Good job, I will have to check and confirm your changes before it appears on the github website in the repository. 
+So now lets say we are all working on the project and I've made changes to the repository and your clone of the repository 
+isn't up to date anymore. Running these commands will update your clone.
+
+git fetch upstream
+git merge upstream/master
+
+
+That's all for now. If you get stuck please let me know - git has a learning curve if you've never used it before. 
+
+Here are some references if you get stuck and you want to figure it out yourself:
+https://help.github.com/articles/fork-a-repo
+https://help.github.com/articles/set-up-git
+
+
+
 
 

@@ -1,1 +1,16 @@
-Init
+Steps to install github tools
+
+1) Go to: https://help.github.com/articles/set-up-git
+2) Install the Github native app if you want and install the latest version 
+of Git. If you're doing everything over babbage, git should already be installed.
+3) Follow the Instructions on the Set up Git webpage
+
+
+Steps to fork the github repository ( in other words, make a copy of it on your machine that you can change and edit without compromising the main working version of the project) 
+
+1) Go to: https://help.github.com/articles/fork-a-repo and follow the directions
+2) instead of Spoon-Knife.git the git repository is called capstone so use 'git clone https://github.com/harrison-n/capstone.git' (might be slightly different in windows)
+3) make sure you do the Configure Remotes step 
+
+
+

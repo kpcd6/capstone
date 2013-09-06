@@ -18,7 +18,7 @@ Make changes to the project and commit them to the repository
 
 1) So now you should have the most updated version of the project and have these files in the folder capstone - "README.md, gettingStarted, names.txt"
 2) We are going to add our name to the names.txt file and update the repository. 
-) open up names.txt in your clone of the repository 
+3) open up names.txt in your clone of the repository 
 4) add [Your name] has completed this exercise
 5) save your changes and exit names.txt
 6) make a commit and update the repository by running:

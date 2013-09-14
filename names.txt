@@ -1,1 +1,2 @@
 Harrison Nguyen has completed this tutorial
+This is a test to see if GitHub is working right :)

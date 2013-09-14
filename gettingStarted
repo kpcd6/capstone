@@ -6,6 +6,7 @@ of Git. If you're doing everything over babbage, git should already be installed
 3) Follow the Instructions on the Set up Git webpage
 
 
+
 Steps to fork the github repository ( in other words, make a copy of it on your machine that you can change and edit without compromising the main working version of the project) 
 
 1) Go to: https://help.github.com/articles/fork-a-repo and follow the directions to fork this project
@@ -15,9 +16,10 @@ Steps to fork the github repository ( in other words, make a copy of it on your 
 git clone https://github.com/harrison-n/capstone.git
 3) make sure you do the Configure Remotes step 
 
+
 Make changes to the project and commit them to the repository
 
- So now you should have the most updated version of the project and have these files in the folder capstone - "README.md, gettingStarted, names.txt"
+ So now you should have the most updated version of the project and have these files in the folder /capstone - "README.md, gettingStarted, names.txt"
  We are going to add our name to the names.txt file and update the repository. 
 1) open up names.txt in your clone of the repository 
 2) add [Your name] has completed this exercise
@@ -42,6 +44,8 @@ To https://github.com/harrison-n/capstone.git
    37fff94..bac55fa  master -> master
 
 
+
+
 So now lets say we are all working on the project and I've made changes to the repository and your clone of the repository 
 isn't up to date anymore. Running these commands will update your clone.
 
@@ -56,4 +60,4 @@ https://help.github.com/articles/fork-a-repo
 https://help.github.com/articles/set-up-git
 
 Feel free to create your own text files and play with the repository. In fact I encourage that you do create a text file and
-try to add it to the repository. It's pretty much the same as changing a file. 
+try to add it to the repository if you have time. It's pretty much the same as changing a file. 

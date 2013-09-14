@@ -9,8 +9,8 @@ of Git. If you're doing everything over babbage, git should already be installed
 Steps to fork the github repository ( in other words, make a copy of it on your machine that you can change and edit without compromising the main working version of the project) 
 
 1) Go to: https://help.github.com/articles/fork-a-repo and follow the directions to fork this project
-(note:it's a little harder on windows but there are instructions)
-(note: You don't have to click the fork button but it's ok if you do)
+	(note:it's a little harder on windows but there are instructions)
+	(note#2:You don't have to click the fork button but it's ok if you do)
 2) instead of Spoon-Knife.git the git repository is called capstone so use the command
 git clone https://github.com/harrison-n/capstone.git
 3) make sure you do the Configure Remotes step 

@@ -1,5 +1,5 @@
-INSERT INTO ScoreBoard (Winner,TeamAFinalScore,TeamBFinalScore,CurrentTime) VALUES ("Winner",195,183,10.32);
-INSERT INTO ScoreBoard (Winner,TeamAFinalScore,TeamBFinalScore,CurrentTime) VALUES ("Loser",195,183,10.32);
+INSERT INTO ScoreBoard (GameName,TeamName,TeamAFinalScore,TeamBFinalScore,TimeRemaining) VALUES ("AwesomeGame","Red",195,183,10.32);
+INSERT INTO ScoreBoard (GameName,TeamName,TeamAFinalScore,TeamBFinalScore,TimeRemaining) VALUES ("Game2","Blue",215,187,15.01);
 
 INSERT INTO Team (ShotScore,TargetHit,CurrentScore,TeamName,NumOfPlayers,ScoreBoardID) VALUES (169,26,195,"Red",7,1);
 INSERT INTO Team (ShotScore,TargetHit,CurrentScore,TeamName,NumOfPlayers,ScoreBoardID) VALUES (166,17,183,"Blue",7,2);

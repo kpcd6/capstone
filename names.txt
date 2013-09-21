@@ -8,6 +8,7 @@ Chen Xu test test
 test 2
 testtttttttttttts
 afjsdfajgio 
-functioN{
-Harry nguyen 
+
+new Function{
+try;
 }

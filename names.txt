@@ -2,7 +2,7 @@
 capstone
 
 test test
-
+asdfasdfasdf
 Harrison Nguyen has completed this tutorial
 Cody Hicks has completed this tutorial
 Chen Xu has completed this tutorial
@@ -19,5 +19,3 @@ try;
 }
 asdfl;kajsdf;klj
 test
-
->>>>>>> 6ba234b348c23fafbf437b0baad86c70940ff465

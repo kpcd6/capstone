@@ -27,9 +27,9 @@ public class JoinFrame extends JFrame {
 	 */
 	public JoinFrame() {
 		//for joinFrame we probably want the close operation 
-        //to close the game, not the entire program. We can use
+	        //to close the game, not the entire program. We can use
 		//DO_NOTHING_ON_CLOSE and set it to tell the DB we are 
-	    //no longer in the game, and then free up resources 
+		//no longer in the game, and then free up resources 
 		//by using a action listener on window close.   
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                                 
 		setBounds(100, 100, 800, 689);

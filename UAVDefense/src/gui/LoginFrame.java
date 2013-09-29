@@ -150,7 +150,6 @@ public class LoginFrame extends JFrame {
 		gbc_btnRegister.gridx = 3;
 		gbc_btnRegister.gridy = 3;
 		contentPane.add(btnRegister, gbc_btnRegister);
-		
 		/*If the login is successful - switch to the StartFrame and close LoginFrame
 		 *If the login is not successful - display dialog box 
 		 */

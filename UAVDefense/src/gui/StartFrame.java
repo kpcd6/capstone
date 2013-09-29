@@ -219,6 +219,12 @@ public class StartFrame extends JFrame {
 		contentPane.add(btnNewGame, gbc_btnNewGame);
 		
 		JButton btnJoinGame = new JButton("Join Game");
+		btnJoinGame.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JoinFrame join = new JoinFrame();
+				join.setVisible(true);
+			}
+		});
 		GridBagConstraints gbc_btnJoinGame = new GridBagConstraints();
 		gbc_btnJoinGame.anchor = GridBagConstraints.WEST;
 		gbc_btnJoinGame.insets = new Insets(0, 0, 5, 5);
@@ -241,7 +247,7 @@ public class StartFrame extends JFrame {
 		gbc_btnRefreshList.gridx = 7;
 		gbc_btnRefreshList.gridy = 4;
 		contentPane.add(btnRefreshList, gbc_btnRefreshList);
-	//Actions
+	//Actions 
 		
 		//Exit button in menu closes the entire program.
 		mntmExit.addActionListener(new ActionListener() {
@@ -249,7 +255,5 @@ public class StartFrame extends JFrame {
 				System.exit(0);
 			}
 		});
-		
-	
 	}
 }

@@ -1,0 +1,13 @@
+Log into putty
+Username: 
+cs4970sp13grp2
+Password:
+cx:tCXPx8mnmA
+
+Log into mysql:
+mysql -u cs4970sp13grp2 -p
+Password: 
+4vmYGtTQVw
+
+Switch database:
+use cs4970sp13grp2;

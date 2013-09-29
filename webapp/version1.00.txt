@@ -1,0 +1,22 @@
+Version 1.00
+*Brief:
+This version aims at GUI of web-app. Some part of the features are still in progress.
+You can test it by http://babbage.cs.missouri.edu/~tzgwb/capstone/
+*Experinence:
+The website can run the best performance on Chrome (Windows 8). It also works on IE 10 (Windows 8).
+I have tested it on Chrome & Safari (Mac), It works ok. But the test on Chrome (Nexus 7) failed (can not go back to Home page).
+*Problem:
+This version still exists some bugs. And I haven't solve all of them.
+a. Can not resize the menu & article
+b. The close button does not work well. Most time it won't show up when I open the website.
+c. It may crush if I click menus taps many times in a row. I don't know if it is the problem of Chrome or the website.
+d. It will flash in a short time during the first time opening the website.
+e. Videos will still play when I click other tabs.
+*Question:
+In the future work,
+a. Do we need a login-sys to identify guests & players?
+b. Do we have some other tabs that should be added which I did not add in the version 1.00?
+c. Do you have some good ideas about contact part?
+*Request
+I hope someone can discuss the video-stream part with me in future works, since I reraly know that thing.
+

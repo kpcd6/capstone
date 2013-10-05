@@ -31,27 +31,8 @@ public class StartFrame extends JFrame {
 
 	private JPanel contentPane;
 	private JTable tablePlayerStats;
-	private JTable tableGameProgress;
+	private JTable tableGameProgress; 
 
-	/**
-	 * Launch the application.
-	 */
-/*	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					StartFrame frame = new StartFrame();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public StartFrame() {
 	
 		
@@ -207,6 +188,8 @@ public class StartFrame extends JFrame {
 		JButton btnNewGame = new JButton("New Game");
 		btnNewGame.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				NewGameFrame newGame = new NewGameFrame(); 
+				newGame.setVisible(true); 
 			}
 		});
 		

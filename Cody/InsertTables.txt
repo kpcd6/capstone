@@ -1,5 +1,5 @@
-INSERT INTO ScoreBoard (GameName,TeamName,TeamAFinalScore,TeamBFinalScore,TimeRemaining) VALUES ("AwesomeGame","Red",195,183,10.32);
-INSERT INTO ScoreBoard (GameName,TeamName,TeamAFinalScore,TeamBFinalScore,TimeRemaining) VALUES ("Game2","Blue",215,187,15.01);
+INSERT INTO ScoreBoard (Winner,TeamAFinalScore,TeamBFinalScore,CurrentTime) VALUES ("Winner",195,183,10.32);
+INSERT INTO ScoreBoard (Winner,TeamAFinalScore,TeamBFinalScore,CurrentTime) VALUES ("Loser",195,183,10.32);
 
 INSERT INTO Team (ShotScore,TargetHit,CurrentScore,TeamName,NumOfPlayers,ScoreBoardID) VALUES (169,26,195,"Red",7,1);
 INSERT INTO Team (ShotScore,TargetHit,CurrentScore,TeamName,NumOfPlayers,ScoreBoardID) VALUES (166,17,183,"Blue",7,2);
@@ -19,20 +19,20 @@ INSERT INTO Drone (CurrentRole,AmmoLeft,Status,xCoord,yCoord,zCoord,ShotCount,Hi
 INSERT INTO Drone (CurrentRole,AmmoLeft,Status,xCoord,yCoord,zCoord,ShotCount,HitCount,ScoreBoardID,TeamID) VALUES ("Defense",62,"Active",0,5,1,38,9,2,2);
 INSERT INTO Drone (CurrentRole,AmmoLeft,Status,xCoord,yCoord,zCoord,ShotCount,HitCount,ScoreBoardID,TeamID) VALUES ("Defense",25,"Inactive",3,1,2,75,51,2,2);
 
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sherlock","Holmes","Detective","Isthisastrongpassword?","sherlock@yahoo.com",1,1,1);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("John","Watson","SidekickWatson","Usepassphrases","watson@gmail.com",1,1,2);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Greg","Lestrade","Lestrade","Encryptthis","lestrade@gmail.com",1,1,3);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sally","Donovan","Donovan","DontStoreInPlainText","donovan@yahoo.com",1,1,4);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("James","Moriarty","Villain","Databreachesarebad","moriarty@gmail.com",1,1,5);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Mrs.","Hudson","Hudson","Whatdidwelearnhere?","hudson@yahoo.com",1,1,6);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Mycroft","Holmes","Mycroft","Lastpassiscool","mycroft@yahoo.com",1,1,7);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Molly","Hooper","Hooper","Keepsecurityinmind","hooper@gmail.com",2,2,8);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sarah","Sawyer","Sawyer","Dataloss","sawyer@gmail.com",2,2,9);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Irene","Adler","Adler","Knowledgeispower","adler@yahoo.com",2,2,10);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sebastian","Wilkes","Wilkes","Cybersecurityawareness","wilkes@gmail.com",2,2,11);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Kitty","Riley","Riley","Dontsharepasswords","riley@yahoo.com",2,2,12);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Reichenbach","Fall","Reichenbach","Lockyourcomputer","fall@gmail.com",2,2,13);
-INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerUsername,PlayerPassword,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Baker","Street","221B","Stickynotepasswordslol","street@yahoo.com",2,2,14);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sherlock","Holmes","sherlock@yahoo.com",1,1,1);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("John","Watson","watson@gmail.com",1,1,2);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Greg","Lestrade","lestrade@gmail.com",1,1,3);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sally","Donovan","donovan@yahoo.com",1,1,4);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("James","Moriarty","moriarty@gmail.com",1,1,5);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Mrs.","Hudson","hudson@yahoo.com",1,1,6);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Mycroft","Holmes","mycroft@yahoo.com",1,1,7);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Molly","Hooper","hooper@gmail.com",2,2,8);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sarah","Sawyer","sawyer@gmail.com",2,2,9);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Irene","Adler","adler@yahoo.com",2,2,10);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Sebastian","Wilkes","wilkes@gmail.com",2,2,11);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Kitty","Riley",riley@yahoo.com",2,2,12);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Reichenbach","Fall","fall@gmail.com",2,2,13);
+INSERT INTO Player (PlayerFirstName,PlayerLastName,PlayerEmail,ScoreBoardID,TeamID,DroneID) VALUES ("Baker","Street","street@yahoo.com",2,2,14);
 
 INSERT INTO Target (HitCount,TargetStatus,TimeCount) VALUES (5,"Active",15);
 INSERT INTO Target (HitCount,TargetStatus,TimeCount) VALUES (5,"Active",15);
@@ -55,3 +55,18 @@ INSERT INTO Defense (ScoreBoardID,TeamID,DroneID) VALUES (2,2,11);
 INSERT INTO Defense (ScoreBoardID,TeamID,DroneID) VALUES (2,2,12);
 INSERT INTO Defense (ScoreBoardID,TeamID,DroneID) VALUES (2,2,13);
 INSERT INTO Defense (ScoreBoardID,TeamID,DroneID) VALUES (2,2,14);
+
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (1,"Detective","Isthisastrongpassword?");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (2,"SidekickWatson","Usepassphrases");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (3,"Lestrade","Encryptthis");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (4,"Donovan","DontStoreInPlainText");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (5,"Villain","Databreachesarebad");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (6,"Hudson","Whatdidwelearnhere?");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (7,"Mycroft","Lastpassiscool");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (8,"Hooper","Keepsecurityinmind");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (9,"Sawyer","Dataloss");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (10,"Adler","Knowledgeispower");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (11,"Wilkes","Cybersecurityawareness");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (12,"Riley","Dontsharepasswords");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (13,"Reichenbach","Lockyourcomputer");
+INSERT INTO Authenticate (PlayerID,PlayerUsername,PlayerPassword) VALUES (14,"221B","Stickynotepasswordslol");

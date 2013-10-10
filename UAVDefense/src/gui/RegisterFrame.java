@@ -3,20 +3,14 @@ package gui;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import java.awt.GridBagLayout;
-
 import javax.swing.JLabel;
-
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
-
 import java.awt.Color;
 import java.awt.Font;
-
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 
@@ -144,8 +138,7 @@ public class RegisterFrame {
 		contentPane.add(textEmail, gbc_textEmail);
 		textEmail.setColumns(10);
 		
-		JButton btnRegister = new JButton("Register");
-		
+		btnRegister = new JButton("Register");
 		GridBagConstraints gbc_btnRegister = new GridBagConstraints();
 		gbc_btnRegister.anchor = GridBagConstraints.EAST;
 		gbc_btnRegister.insets = new Insets(0, 0, 0, 5);
@@ -156,7 +149,8 @@ public class RegisterFrame {
 		return contentPane; 
 	}
 	public void buttonActionListeners(ActionListener al){
-		btnRegister.setActionCommand("register");
+		System.out.println("something happened"); 
+		btnRegister.setActionCommand("Register");
 		btnRegister.addActionListener(al);
 	}
 	public String getUsername(){

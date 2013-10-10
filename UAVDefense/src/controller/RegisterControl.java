@@ -2,6 +2,8 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.security.NoSuchAlgorithmException;
+
 import functions.RegisterModel;
 import gui.RegisterFrame;
 
@@ -21,8 +23,13 @@ import gui.RegisterFrame;
 		//action performed by view
 		public void actionPerformed(ActionEvent ae){
 			String action = ae.getActionCommand(); 
-			if(action.equals("register")){
-				model.attemptRegister(); 
+			System.out.println("something happened");
+			if(action.equals("Register")){
+				try {
+					model.attemptRegister(view.getUsername(), view.getPassword(), view.getPasswordConfirm() , view.getEmail());
+				} catch (NoSuchAlgorithmException e) {
+					e.printStackTrace();
+				} 
 			}
 		}
 	}

@@ -1,8 +1,5 @@
-Log into putty
-Username: 
-cs4970sp13grp2
-Password:
-cx:tCXPx8mnmA
+Host name:
+ubuntu@ec2-54-200-170-30.us-west-2.compute.amazonaws.com
 
 Log into mysql:
 mysql -u cs4970sp13grp2 -p

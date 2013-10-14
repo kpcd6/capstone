@@ -96,7 +96,7 @@ CREATE TABLE Player
 
 CREATE TABLE Authenticate
 (
-	PlayerID INT,
+	PlayerID INT NOT NULL AUTO_INCREMENT,
 	PlayerUsername VARCHAR(20),
 	PlayerPassword VARCHAR(40),
 	

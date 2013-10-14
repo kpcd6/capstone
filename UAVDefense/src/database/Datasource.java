@@ -20,9 +20,9 @@ public class Datasource {
     		e.printStackTrace();
     	}
     	
-    	cpds.setJdbcUrl("jdbc:mysql://dbhost-mysql.cs.missouri.edu/cs4970sp13grp2");
-    	cpds.setUser("cs4970sp13grp2");
-    	cpds.setPassword("4vmYGtTQVw");
+    	cpds.setJdbcUrl("jdbc:[redacted]");
+    	cpds.setUser("[redacted]");
+    	cpds.setPassword("[redacted]");
     	cpds.setMinPoolSize(5);
     	cpds.setAcquireIncrement(5);
     	cpds.setMaxPoolSize(10);

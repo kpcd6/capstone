@@ -33,6 +33,25 @@ public class StartFrame extends JFrame {
 	private JTable tablePlayerStats;
 	private JTable tableGameProgress;
 
+	/**
+	 * Launch the application.
+	 */
+/*	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StartFrame frame = new StartFrame();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
 	public StartFrame() {
 	
 		
@@ -188,8 +207,6 @@ public class StartFrame extends JFrame {
 		JButton btnNewGame = new JButton("New Game");
 		btnNewGame.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				NewGameFrame newGame = new NewGameFrame();
-				newGame.setVisible(true);
 			}
 		});
 		
@@ -201,7 +218,7 @@ public class StartFrame extends JFrame {
 		gbc_btnNewGame.gridy = 4;
 		contentPane.add(btnNewGame, gbc_btnNewGame);
 		
-		JButton btnJoinGame =  new JButton("Join Game");
+		JButton btnJoinGame = new JButton("Join Game");
 		btnJoinGame.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JoinFrame join = new JoinFrame();

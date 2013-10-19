@@ -17,7 +17,7 @@ import gui.RegisterFrame;
 			this.model = model; 
 			this.view = view;
 			//add action listener from control to view. 
-			view.buttonActionListeners(this); 
+			view.buttonActionListeners(this);
 		}
 		
 		//action performed by view
@@ -31,5 +31,6 @@ import gui.RegisterFrame;
 					e.printStackTrace();
 				} 
 			}
+			
 		}
 	}

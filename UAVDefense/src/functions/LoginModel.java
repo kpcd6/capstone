@@ -17,7 +17,8 @@ public class LoginModel {
 	{
 		RegisterFrame frame = new RegisterFrame(); 
 		RegisterDAO registerDao = new RegisterDAO(); 
-		RegisterModel model = new RegisterModel(registerDao); 
-		RegisterControl control = new RegisterControl(model, frame); 
+		RegisterModel registerModel = new RegisterModel(registerDao); 
+		RegisterControl registerControl = new RegisterControl(registerModel, frame); 
+	
 	}
 }

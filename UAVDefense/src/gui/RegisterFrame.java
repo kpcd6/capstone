@@ -28,6 +28,7 @@ public class RegisterFrame {
 	 */
 	public RegisterFrame() {
 		createAndShowGUI(); 
+		System.out.println("Here I am");
 	}
 
 	private void createAndShowGUI(){
@@ -35,7 +36,7 @@ public class RegisterFrame {
 		frame.setTitle("Register"); 
 		frame.setContentPane(createContentPane());
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 443, 280);
 		frame.setVisible(true); 
 	}
 
@@ -47,7 +48,7 @@ public class RegisterFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[]{0, 0, 208, 0, 0};
-		gbl_contentPane.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gbl_contentPane.rowHeights = new int[]{0, 0, 21, 0, 0, 0, 0, 0, 0};
 		gbl_contentPane.columnWeights = new double[]{0.0, 0.0, 1.0, 0.0, Double.MIN_VALUE};
 		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		contentPane.setLayout(gbl_contentPane);
@@ -145,14 +146,17 @@ public class RegisterFrame {
 		gbc_btnRegister.gridx = 2;
 		gbc_btnRegister.gridy = 7;
 		contentPane.add(btnRegister, gbc_btnRegister);
-
+		System.out.println("something happened"); 
 		return contentPane; 
+		
 	}
 	public void buttonActionListeners(ActionListener al){
 		System.out.println("something happened"); 
 		btnRegister.setActionCommand("Register");
 		btnRegister.addActionListener(al);
 	}
+	
+	
 	public String getUsername(){
 		return textUsername.getText();
 	}
@@ -165,5 +169,4 @@ public class RegisterFrame {
 	public String getEmail(){
 		return textEmail.getText(); 
 	}
-
 }

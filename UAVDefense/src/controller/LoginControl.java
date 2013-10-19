@@ -6,7 +6,9 @@ import java.awt.event.ActionListener;
 import functions.LoginModel;
 import gui.LoginFrame;
 
+
 public class LoginControl implements ActionListener {
+
 	LoginModel model; 
 	LoginFrame view; 
 	

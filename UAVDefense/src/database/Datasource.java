@@ -19,10 +19,11 @@ public class Datasource {
     	} catch (PropertyVetoException e) {
     		e.printStackTrace();
     	}
-    	
-    	cpds.setJdbcUrl("jdbc:mysql://54.200.170.30/cs4970sp13grp2");
-    	cpds.setUser("cs4970sp13grp2");
-    	cpds.setPassword("4vmYGtTQVw");
+    
+
+    	cpds.setJdbcUrl("jdbc:[redacted]");
+    	cpds.setUser("[redacted]");
+    	cpds.setPassword("[redacted]");
     	cpds.setMinPoolSize(5);
     	cpds.setAcquireIncrement(5);
     	cpds.setMaxPoolSize(10);

@@ -8,9 +8,6 @@ import java.sql.SQLException;
 
 public class DBConnection {
         String driverClassName = "com.mysql.jdbc.Driver";
-        String connectionUrl = "jdbc:mysql://54.200.170.30/cs4970sp13grp2";
-        String dbUser = "cs4970sp13grp2";
-        String dbPwd = "4vmYGtTQVw";
 
         private static DBConnection dbConnection = null;
 

@@ -28,12 +28,19 @@
 							<li><a href="#!/Gallery"><strong>Gallery</strong></a></li>
 							<li><a href="#!/Contact"><strong>Contact</strong></a></li>
 							<li><a href="#!/AboutUs"><strong>About Us</strong></a></li>
+							<li><a href="#!/GameLobby"><strong>Game Lobby</strong></a></li>
+							<li><a href="#!/Register"><strong>Register/Login</strong></a></li>
 						</ul>
 					</nav>
 				</header>
 				
 				<article id="content">
 					<ul>
+					
+					<?PHP
+					session_start();
+					include "database.php";
+					?>
 						<li id="Home">
 							<div class="box">
 								<div class="inner">
@@ -131,14 +138,15 @@
 									<p>Test Video</p>
 									<p>Test Database Here<p>
 									<?php									
-										session_start();
-										include_once 'database.php';
 										//echo "test";
 										
 										$query = "select * from ScoreBoard";
 										$result = mysqli_query($link, $query)
 										or die("Query Failed: ".mysql_error());
+										$num = mysqli_num_rows($result);
+										echo '</br>'."num = ".$num.'</br>';
 										// printing results in HTML
+										
 										echo "<table>";
 
 										while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC))
@@ -159,7 +167,7 @@
 										mysqli_free_result($result);
 
 										// closing connection
-										mysqli_close($link);
+		//								mysqli_close($link);
 										
 										print "<p>Test Succeed</p>"
 									?>
@@ -192,12 +200,12 @@
 										<div class="col1">
 											<h2><strong>Team Members</strong></h2>
 											<ul class="nav">
-												<li class=""><a href="#Harry"><span></span>Harry</a></li>
-												<li><a href="#Ju"><span></span>Chen Ju</a></li>
-												<li><a href="#Xu"><span></span>Chen Xu</a></li>
-												<li><a href="#Cody"><span></span>Cody Hicks</a></li>
-												<li><a href="#Krit"><span></span>Krit Pattamadit</a></li>
-												<li><a href="#Tianyu"><span></span>Tianyu Zhang</a></li>
+												<li><a href="#Harry" class='button'><span></span><strong>Harry</strong></a></li>
+												<li><a href="#Ju" class='button'><span></span><strong>Chen Ju</strong></a></li>
+												<li><a href="#Xu" class='button'><span></span><strong>Chen Xu</strong></a></li>
+												<li><a href="#Cody" class='button'><span></span><strong>Cody Hicks</strong></a></li>
+												<li><a href="#Krit" class='button'><span></span><strong>Krit Pattamadit</strong></a></li>
+												<li><a href="#Tianyu" class='button'><span></span><strong>Tianyu Zhang</strong></a></li>
 											</ul>
 										</div>
 										<div class="col2 left1">
@@ -215,7 +223,7 @@
 											A lot of my programming experience comes from the computer science classes at the University of Missouri �?Columbia.
 											The language that I have the most experience in is C since most of the courses at Mizzou use C for teaching.
 											I have some experience in creating sound effects using various audio production tools such as Ableton Live and Omnisphere.
-											As for the project, I’m really flexible if someone has a good idea. </p>
+											As for the project, I'm really flexible if someone has a good idea. </p>
 											</div>
 											</div>
 											<div class="tab_content" id="Ju">
@@ -227,7 +235,7 @@
 											I currently have two jobs. Firstly I am a teacher in a Chinese Language Training school, 
 											which is called New Oriental. I am also an editor for a city government’s news webpage in China. 
 											I have some business, finance background too. So, I think I am good at communicating and writing, and that’s why I like being a system analyst. 
-											I don’t have a specific idea for now, I think games, app, webpage all sound good to me. 
+											I don't have a specific idea for now, I think games, app, webpage all sound good to me. 
 											Looking forward to working together with you.</p>
 											</div>
 											</div>
@@ -263,10 +271,29 @@
 						<li id="More_Info">
 							<div class="box">
 								<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
 									<h1>Test More Info</h1>
 								</div>
 							</div>
 						</li>
+						<li id="GameLobby">
+								<?php 
+									require('gamelobby.php');
+								?>
+						</li>
+						<li id="Register">
+							<div class="box">
+								<div class="inner">
+								<a href="#" class="close" data-type="close"><span></span></a>
+								<?php 
+								require('login.php');
+								?>
+								</div>
+							</div>
+						</li>
+						<?php
+							require('gameinfo.php');
+						?>
 					</ul>
 				</article>			
 			</div>

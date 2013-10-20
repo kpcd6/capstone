@@ -1,5 +1,5 @@
 <?php
-	   $db_server = "54.200.170.30";
+	$db_server = "dbhost-mysql.cs.missouri.edu";
        $userName = "cs4970sp13grp2";
        $password = "4vmYGtTQVw";
        $dbName = "cs4970sp13grp2";
